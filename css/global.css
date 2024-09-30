@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(111, 111, 111);
+}
+
+.tituloAmigos{
+    font-size: 36px;
+}
+
+.listaDeAmigos{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.amigo{
+    height: 80px;
+    background-color: crimson;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.amigo h3{
+    padding: 0;
+    color: #fff;
+}
+.amigo p{
+    font-size: 12px;
+    padding: 0;
+}
+
+@media screen and (min-width: 600px){
+    .listaDeAmigos{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 26px;
+    }
+}
